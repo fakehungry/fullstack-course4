@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Pangolin", cursive;
+}
+
+h1 {
+  text-align: center;
+  padding: 30px;
+}
+
+section {
+  position: relative;
+  padding: 0 2.5%;
+}
+
+article {
+  width: 30%;
+  border: 1px solid black;
+  float: left;
+  margin: 10px 1.5%;
+  background-color: grey;
+}
+
+.menu {
+  width: 40%;
+  text-align: center;
+  float: right;
+  border: 1px solid black;
+}
+
+.text {
+  clear: right;
+  padding: 10px;
+}
+
+.chicken {
+  background-color: yellow;
+}
+
+.beef {
+  background-color: green;
+}
+
+.sushi {
+  background-color: teal;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  section {
+    padding: 10px auto;
+  }
+  article {
+    width: 45%;
+    margin: 10px 2.5%;
+  }
+  article:last-child {
+    width: calc(95%);
+  }
+}
+
+@media (max-width: 767px) {
+  article {
+    width: 80%;
+    float: none;
+    margin: 20px auto;
+  }
+}
